@@ -28,20 +28,18 @@ ENV/
 .venv
 
 # Data files
-data/raw/*
 data/processed/*
+!data/raw/ice_cream_survey_data.csv  # Allow the specific raw data file
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
 # Reports and outputs
 reports/*
 !reports/.gitkeep
+!reports/README.md
 figures/*
 !figures/.gitkeep
-
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
+!figures/README.md
 
 # IDE
 .idea/
@@ -64,7 +62,6 @@ config.ini
 credentials.json
 *.pkl
 *.h5
-*.csv
 *.xlsx
 *.xls
 *.zip
@@ -75,3 +72,4 @@ credentials.json
 !setup.py
 !README.md
 !LICENSE
+!data/README.md
