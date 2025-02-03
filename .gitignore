@@ -34,7 +34,7 @@ data/processed/*
 !data/processed/.gitkeep
 
 # Reports and outputs
-reports/*
+
 !reports/.gitkeep
 !reports/README.md
 figures/*

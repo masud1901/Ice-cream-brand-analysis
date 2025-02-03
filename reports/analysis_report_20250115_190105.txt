@@ -1,0 +1,228 @@
+Starting ice cream market analysis...
+
+Loading and cleaning data...
+Starting data cleaning process...
+Cleaned data saved to: data/processed/cleaned_ice_cream_data.csv
+Data cleaning completed successfully!
+
+Running demographic analysis...
+Starting demographic analysis...
+
+Demographic Summary
+==================================================
+
+Basic Distributions:
+--------------------
+
+Age:
+18-24: 71 (60.2%)
+25-34: 38 (32.2%)
+35-44: 4 (3.4%)
+45-55: 3 (2.5%)
+25-35: 1 (0.8%)
+Below 18: 1 (0.8%)
+
+Gender:
+Male: 60 (50.8%)
+Female: 58 (49.2%)
+
+Income:
+Below 25,000: 43 (36.4%)
+25,000 - 50,000: 34 (28.8%)
+50,001 - 100,000: 23 (19.5%)
+150,001- 250,000: 7 (5.9%)
+100,001 - 150,000: 6 (5.1%)
+Above 250,000: 5 (4.2%)
+
+Occupation:
+Student: 72 (61.0%)
+Service Holder: 22 (18.6%)
+Homemaker: 16 (13.6%)
+Businessman: 6 (5.1%)
+Teacher: 1 (0.8%)
+Lawyer: 1 (0.8%)
+
+Cross-Tabulation Analysis:
+--------------------
+
+Age vs Gender Distribution:
+gender    Female  Male
+age                   
+18-24         34    37
+25-34         20    18
+25-35          0     1
+35-44          1     3
+45-55          3     0
+Below 18       0     1
+
+Income vs Occupation Distribution:
+occupation                                          Businessman  Homemaker  Lawyer  Service Holder  Student  Teacher
+which_income_range_do_you_your_family_belong_to...                                                                  
+100,001 - 150,000                                             1          1       1               0        3        0
+150,001- 250,000                                              2          0       0               1        4        0
+25,000 - 50,000                                               1          6       0              11       16        0
+50,001 - 100,000                                              1          3       0               4       15        0
+Above 250,000                                                 0          0       0               1        4        0
+Below 25,000                                                  1          6       0               5       30        1
+Demographic analysis completed!
+
+Running preference analysis...
+Starting preference analysis...
+
+Ice Cream Preference Analysis
+==================================================
+
+
+Top 5 Purchase Factors:
+Taste: 83.9%
+ Flavors: 64.4%
+ Price: 50.8%
+ Brand Reputation: 28.8%
+ Availability: 28.0%
+
+Top 5 Desired Flavors:
+Pistachio: 57.6%
+None Of These: 19.5%
+ Orange: 18.6%
+Orange: 14.4%
+ Jalpai: 11.9%
+
+Top Brand by Product Type:
+cup: Igloo (39.0%)
+sticks: Igloo (33.9%)
+cone: Igloo (39.8%)
+lolly: Igloo (33.9%)
+tubs: Igloo (29.7%)
+
+Satisfaction Levels:
+Satisfied: 41.5%
+Neutral: 28.8%
+Very Satisfied: 18.6%
+Dissatisfied: 8.5%
+Very Dissatisfied: 2.5%
+Preference analysis completed!
+
+Running brand analysis...
+Starting brand analysis...
+
+Brand Analysis Summary
+==================================================
+
+Top 3 Most Preferred Brands:
+Polar: 33.9%
+Igloo: 33.1%
+Savoy: 12.7%
+
+Top 3 Premium Brands:
+Bellissimo: 55.1%
+Igloo: 17.8%
+Savoy: 9.3%
+
+Top 3 Tastiest Brands:
+Igloo: 30.5%
+Bellissimo: 20.3%
+Savoy: 19.5%
+Brand analysis completed!
+
+Running statistical analysis...
+Starting statistical analysis...
+
+Statistical Analysis Summary
+==================================================
+
+Brand Preference Analysis:
+------------------------------
+
+Brand Vs Age:
+Test: Chi-square test of independence
+p-value: 0.9694
+Significant: No
+
+Brand Vs Gender:
+Test: Chi-square test of independence
+p-value: 0.7619
+Significant: No
+
+Brand Vs Occupation:
+Test: Chi-square test of independence
+p-value: 0.9907
+Significant: No
+
+Satisfaction Analysis:
+------------------------------
+
+Satisfaction By Income:
+Test: One-way ANOVA
+p-value: 0.1136
+Significant: No
+
+Satisfaction By Gender:
+Test: Independent t-test
+p-value: 0.0326
+Significant: Yes
+
+Price Sensitivity Analysis:
+------------------------------
+Test: Chi-square test of independence
+p-value: 0.7203
+Significant: No
+
+Price Sensitivity by Income Group:
+100,001 - 150,000: 66.7% price-sensitive
+150,001- 250,000: 42.9% price-sensitive
+25,000 - 50,000: 64.7% price-sensitive
+50,001 - 100,000: 52.2% price-sensitive
+Above 250,000: 80.0% price-sensitive
+Below 25,000: 55.8% price-sensitive
+
+Advanced Statistical Analysis Summary
+==================================================
+
+Purchase Pattern Analysis:
+------------------------------
+Poisson Distribution λ: 3.62
+Goodness of fit p-value: 0.0037
+
+Satisfaction Score Distribution:
+Mean: 3.65
+Standard Deviation: 0.96
+Normality test p-value: 0.0625
+
+Markov Chain Analysis:
+------------------------------
+
+Steady State Probabilities:
+Bellissimo: 39.78%
+Igloo: 22.98%
+Savoy: 17.99%
+
+Multinomial Preference Analysis:
+------------------------------
+
+Preference Probabilities:
+prefers_type_other: 21.31%
+prefers_type_cone: 15.46%
+prefers_type_ice_cream_sticks_(chocbar,_crunchy_bar_etc.): 15.22%
+Statistical analysis completed!
+
+Running advanced statistical analysis...
+Starting advanced statistical analysis...
+
+Advanced Analysis Summary
+==================================================
+
+Effect Sizes:
+Cohen's d: 0.398 (small effect)
+Eta-squared: 0.075 (medium effect)
+
+Bootstrap Analysis:
+Mean Satisfaction: 3.65
+95% CI: [3.47, 3.82]
+
+Power Analysis:
+Statistical Power: 0.580
+Effect Size: 0.402
+
+Advanced statistical analysis completed!
+
+Analysis completed successfully!
